@@ -1,0 +1,88 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+         :root {
+            --color-light-50: #f8fafc;
+            --color-dark-50: #797984;
+            --color-dark-100: #312d37;
+            --color-dark-900: #000;
+            --color-purple-50: #901ec5;
+            --color-purple-100: #170525;
+            --color-purple-200: #000000;
+            --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+        }
+        
+        body {
+            font-family: 'Poppins' sans-serif;
+            background-image: var(--color-gradient)
+        }
+        
+        .box {
+            color: var(--color-dark-900);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--color-light-50);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+        }
+        
+        legend {
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .inputBox {
+            position: relative;
+        }
+        
+        .inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid var(--color-light-50);
+            outline: none;
+            color: var(--color-light-50);
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        
+        .labelInput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput {
+            top: -20px;
+            font-size: 12px;
+            color: var(--color-purple-50);
+        }
+        
+        #data_nascimento {
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        
+        #submit {
+            background-image: var(--color-gradient);
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: var(--color-light-50);
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        #submit:hover {
+            background-image: var(--color-gradient);
+        }
